@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><script type="text/javascript" async="" src="js/TC-WOX3OO4U.js"></script><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	
+		<title>Clube da Pedagogia - Atividades Pedagógicas</title>
+<meta name="robots" content="max-image-preview:large">
+		<style>
+			.lazyload,
+			.lazyloading {
+				max-width: 100%;
+			}
+		</style>
+		<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+ 
+<link data-minify="1" rel="stylesheet" id="hello-elementor-css" href="css/reset.css" media="all">
+<link data-minify="1" rel="stylesheet" id="hello-elementor-theme-style-css" href="css/theme.css" media="all">
+<link data-minify="1" rel="stylesheet" id="hello-elementor-header-footer-css" href="css/header-footer.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="css/custom-frontend.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-6-css" href="css/post-6.css" media="all">
+<link data-minify="1" rel="stylesheet" id="font-awesome-5-all-css" href="css/all.min.css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="css/v4-shims.min.css" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="css/widget-heading.min.css" media="all">
+<link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+<link rel="stylesheet" id="widget-divider-css" href="css/widget-divider.min.css" media="all">
+<link rel="stylesheet" id="e-animation-grow-css" href="css/e-animation-grow.min.css" media="all">
+<link rel="stylesheet" id="widget-icon-list-css" href="css/custom-widget-icon-list.min.css" media="all">
+<link rel="stylesheet" id="e-shapes-css" href="css/shapes.min.css" media="all">
+<link rel="stylesheet" id="widget-menu-anchor-css" href="css/widget-menu-anchor.min.css" media="all">
+<link rel="stylesheet" id="widget-image-box-css" href="css/custom-widget-image-box.min.css" media="all">
+<link rel="stylesheet" id="widget-nested-accordion-css" href="css/widget-nested-accordion.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-5382-css" href="css/post-5382.css" media="all">
+<style id="site-palette-v2">
+/* Hero */
+.elementor-5382 .elementor-element.elementor-element-432ac22e:not(.elementor-motion-effects-element-type-background){background-color:#FFF8EA !important;background-image:none !important;}
+.elementor-5382 .elementor-element.elementor-element-34e9b168 .elementor-heading-title{color:#16223F !important;}
+.elementor-5382 .elementor-element.elementor-element-132e37b0 .elementor-heading-title{color:#16223F !important;}
+.elementor-5382 .elementor-element.elementor-element-59d23eb0 .elementor-icon-list-text{color:#16223F !important;}
+/* Testimonials heading */
+.elementor-5382 .elementor-element.elementor-element-37b7b37d .elementor-heading-title{color:#16223F !important;}
+/* "Para quem" section */
+.elementor-5382 .elementor-element.elementor-element-3915800c:not(.elementor-motion-effects-element-type-background){background-color:#FFF8EA !important;background-image:none !important;}
+.elementor-5382 .elementor-element.elementor-element-671a1d6c{border-color:#2563EB !important;}
+.elementor-5382 .elementor-element.elementor-element-42c4648{border-color:#2563EB !important;}
+.elementor-5382 .elementor-element.elementor-element-1974a1e7 .elementor-heading-title{color:#16223F !important;}
+.elementor-5382 .elementor-element.elementor-element-708292da .elementor-icon-list-text{color:#16223F !important;}
+.elementor-5382 .elementor-element.elementor-element-708292da .elementor-icon-list-icon i{color:#16A34A !important;}
+.elementor-5382 .elementor-element.elementor-element-708292da .elementor-icon-list-icon svg{fill:#16A34A !important;}
+.elementor-5382 .elementor-element.elementor-element-72238ee3 .elementor-heading-title{color:#16223F !important;}
+.elementor-5382 .elementor-element.elementor-element-2a8d1152 .elementor-icon-list-text{color:#16223F !important;}
+/* Footer bar */
+.elementor-5382 .elementor-element.elementor-element-5d3258fb:not(.elementor-motion-effects-element-type-background){background-color:#16223F !important;background-image:none !important;}
+.elementor-5382 .elementor-element.elementor-element-16188bb .elementor-icon-list-text{color:#fff !important;}
+.elementor-5382 .elementor-element.elementor-element-16188bb a{color:#fff !important;}
+/* Page canvas: was purple, showed through any gap on the page (this was the footer leak) */
+body.elementor-page-5382:not(.elementor-motion-effects-element-type-background), body.elementor-page-5382 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFF8EA !important;}
+/* Two stray purple headings found outside the sections already covered */
+.elementor-5382 .elementor-element.elementor-element-3aed7575 .elementor-heading-title{color:#16223F !important;}
+.elementor-5382 .elementor-element.elementor-element-327891ca .elementor-image-box-title{color:#16223F !important;}
+/* CTA buttons: vivid green, white text, chunky 3D shadow like reference */
+.elementor-5382 .elementor-element.elementor-element-5efa347 .elementor-button,
+.elementor-5382 .elementor-element.elementor-element-bbe406a .elementor-button,
+.elementor-5382 .elementor-element.elementor-element-3f91d9d .elementor-button,
+.elementor-5382 .elementor-element.elementor-element-fe12154 .elementor-button{background-color:#22C55E !important;color:#fff !important;fill:#fff !important;box-shadow:0 4px 0 0 #16A34A !important;}
+/* Plan eyebrow badges now styled directly in the plan-lists block (solid color, matches reference) */
+</style>
+ 
+<!-- removed: font-awesome v4 shims JS not needed -->
+<script type="rocketlazyloadscript" async="async" src="js/jquery.min.js" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+ 
+			<script type="rocketlazyloadscript">
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+				<style>
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			figure.wp-block-image img.lazyloading {
+				min-width: 150px;
+			}
+
+			.lazyload,
+			.lazyloading {
+				--smush-placeholder-width: 100px;
+				--smush-placeholder-aspect-ratio: 1/1;
+				width: var(--smush-image-width, var(--smush-placeholder-width)) !important;
+				aspect-ratio: var(--smush-image-aspect-ratio, var(--smush-placeholder-aspect-ratio)) !important;
+			}
+
+						.lazyload, .lazyloading {
+				opacity: 0;
+			}
+
+			.lazyloaded {
+				opacity: 1;
+				transition: opacity 400ms;
+				transition-delay: 0ms;
+			}
+
+					</style>
+		<meta name="generator" content="Elementor 3.35.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+ 
+
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload):not([data-id="5c864cfd"]):not([data-id="efbb840"]),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload):not([data-id="5c864cfd"]):not([data-id="efbb840"]) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload):not([data-id="5c864cfd"]):not([data-id="efbb840"]),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload):not([data-id="5c864cfd"]):not([data-id="efbb840"]) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload):not([data-id="5c864cfd"]):not([data-id="efbb840"]),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload):not([data-id="5c864cfd"]):not([data-id="efbb840"]) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style id="custom-hero-price">
+				.hero-price{text-align:center;line-height:1.2;margin:8px 0 0}
+				.hero-price .de{color:#DC2626;font-size:28px;font-weight:700}
+				.hero-price .de .strike{text-decoration:line-through}
+				.hero-price .por{color:#16A34A;font-size:32px;font-weight:800;margin-top:4px}
+				.hero-price .obs{color:#16223F;font-size:16px;margin-top:6px}
+				/* Espaço extra entre subheadline e imagem do banner */
+				[data-id="132e37b0"] .elementor-widget-container{margin-bottom:16px}
+				@media (max-width:480px){
+					.hero-price .de{font-size:22px}
+					.hero-price .por{font-size:26px}
+					.hero-price .obs{font-size:14px}
+				}
+			</style>
+			<style id="clientes-slider">
+				.clientes-slider-wrap{width:100%;max-width:260px;margin:0 auto;overflow:hidden}
+				.clientes-slider{display:flex;overflow-x:auto;gap:12px;padding:8px 0 4px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+				.clientes-slider img{flex:0 0 100%;width:100%;max-width:260px;border-radius:8px;scroll-snap-align:center}
+			</style>
+			<style id="cta-below-slider">
+				.cta-slim-wrap{display:flex;justify-content:center;margin:10px 0 18px}
+				.cta-slim{display:inline-block;background:#fff04d;color:#16223F;text-decoration:none;font-weight:800;border-radius:12px;padding:10px 18px;border:2px solid #16223F;box-shadow:0 1px 0 rgba(0,0,0,.2) inset,0 2px 0 rgba(0,0,0,.05);text-transform:uppercase;letter-spacing:.3px;font-size:16px;line-height:1}
+				.cta-slim:hover{filter:brightness(.98)}
+				@media(min-width:768px){.cta-slim{font-size:18px;padding:12px 22px}}
+			</style>
+			<style id="kit-cards">
+				.kit-cards{max-width:820px;margin:0 auto;display:grid;gap:22px 14px;grid-template-columns:repeat(2,1fr);padding:8px}
+				.kit-card{position:relative;background:#fff;border:2px dashed #FBBF24;border-radius:18px;padding:24px 12px 16px;text-align:center;box-shadow:0 1px 2px rgba(22,34,63,.05);display:flex;flex-direction:column;align-items:center}
+				.kit-card-badge{position:absolute;top:-11px;left:12px;display:inline-flex;align-items:center;gap:4px;background:#F97316;color:#fff;font-weight:800;font-size:10.5px;padding:5px 11px;border-radius:20px;box-shadow:0 2px 5px rgba(22,34,63,.18);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+				.kit-card img{width:100%;max-width:190px;height:auto;display:block;margin:4px auto 12px;object-fit:contain}
+				.kit-card h3{margin:0 0 8px;font-size:15.5px;color:#16223F;line-height:1.25;min-height:36px}
+				.kit-card p{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+				.kit-card .kit-price-old{display:block;color:#DC2626;text-decoration:line-through;font-size:12.5px;font-weight:600;margin-bottom:6px}
+				.kit-card .kit-price-free{display:inline-block;background:#DCFCE7;color:#16A34A;font-weight:800;font-size:12.5px;padding:7px 20px;border-radius:20px;letter-spacing:.3px;margin-top:auto}
+				@media(min-width:480px){.kit-card img{max-width:210px}.kit-card h3{font-size:16.5px}}
+				@media(min-width:768px){.kit-cards{max-width:860px;gap:24px 18px}.kit-card img{max-width:230px}.kit-card h3{font-size:18px}.kit-card .kit-price-old,.kit-card .kit-price-free{font-size:14px}}
+			</style>
+			<style id="plan-lists">
+				.plan-list{list-style:none;padding:0;margin:0;width:100%;text-align:left}
+				.plan-title{font-weight:800;font-size:19px;color:#16223F;text-align:center;margin:6px 0 8px;line-height:1.3}
+				.plan-subtitle{font-size:14px;color:#4B5563;text-align:center;margin:0 0 14px;line-height:1.5}
+				.plan-list li{font-size:15px;line-height:1.5;margin-bottom:0;padding-bottom:10px;margin-top:0;padding-top:10px;display:flex;gap:10px;align-items:flex-start;color:#000;text-align:left;border-bottom:1px solid #EDF0F5}
+				.plan-list li:first-child{padding-top:0}
+				.plan-list li:last-child{border-bottom:none;padding-bottom:0}
+				.plan-list .kit-emoji-icon{flex:0 0 auto;width:20px;font-size:17px;line-height:1.4;text-align:center}
+				.plan-list .kit-check-icon{flex:0 0 auto;width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center}
+				.plan-list .kit-check-icon svg{display:none}
+				.plan-list .kit-check-icon::before{content:"";width:100%;height:100%;background-repeat:no-repeat;background-position:center;background-size:contain;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%2300b050' d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'/></svg>")}
+				.plan-list .kit-x-icon{flex:0 0 auto;width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center}
+				.plan-list .kit-x-icon::before{content:"";width:100%;height:100%;background-repeat:no-repeat;background-position:center;background-size:contain;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23bdbdbd' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z'/></svg>")}
+				[data-id="efbb840"]{background:#fff !important;border-style:solid !important;border-width:3px !important;border-color:#F97316 !important;border-radius:18px !important;padding:22px 18px;position:relative;box-shadow:0 22px 48px rgba(249,115,22,.35),0 8px 18px rgba(22,34,63,.16) !important;transform:translateY(-4px) scale(1.03);z-index:2}
+				[data-id="a838e92"]{display:none}
+				[data-id="efbb840"] .plan-price-block{background:transparent;margin:10px 0 14px;padding:0;text-align:center}
+				[data-id="efbb840"] .discount-badge{position:absolute;top:20px;right:18px;background:transparent;color:#16A34A;border:none;padding:0;font-weight:800;font-size:14px}
+				[data-id="efbb840"] .price-old{color:#DC2626;text-decoration:line-through;font-size:16px;font-weight:600;display:block}
+				[data-id="efbb840"] .price-new{display:inline-block;color:#fff !important;background:#22C55E;font-weight:900;font-size:30px;line-height:1.2;margin:8px 0;padding:8px 26px;border-radius:999px;box-shadow:0 4px 0 0 #16A34A}
+				[data-id="efbb840"] .save{color:#DC2626;font-weight:500;font-size:14px}
+				[data-id="efbb840"] .plan-list li{color:#16223F}
+				[data-id="efbb840"] .plan-list li span{color:#16223F}
+				[data-id="efbb840"] .destaque{background:#F97316 !important;color:#fff !important;font-weight:800;padding:7px 16px;border-radius:20px;font-size:13px;letter-spacing:.3px;display:inline-block}
+				.elementor-5382 .elementor-element.elementor-element-d05c857{--divider-color:#F97316 !important;}
+				.elementor-5382 .elementor-element.elementor-element-7ff01d0d{--divider-color:#2563EB !important;}
+				.mais-vendido-badge{display:none}
+				/* Básico */
+				[data-id="5c864cfd"] .plan-price-block{background:transparent;margin:10px 0 14px;padding:0;text-align:center}
+				[data-id="5c864cfd"] .discount-badge{position:absolute;top:20px;right:18px;background:transparent;color:#16A34A;border:none;padding:0;font-weight:800;font-size:14px}
+				[data-id="5c864cfd"] .price-old{color:#DC2626;text-decoration:line-through;font-size:16px;font-weight:600;display:block}
+				[data-id="5c864cfd"] .price-new{display:inline-block;color:#fff !important;background:#22C55E;font-weight:900;font-size:30px;line-height:1.2;margin:8px 0;padding:8px 26px;border-radius:999px;box-shadow:0 4px 0 0 #16A34A}
+				[data-id="5c864cfd"] .save{color:#DC2626;font-weight:500;font-size:14px}
+				[data-id="240c31bb"]{display:none}
+				[data-id="5c864cfd"] .plan-list li{color:#16223F}
+				[data-id="5c864cfd"] .plan-list li span{color:#16223F}
+				[data-id="5c864cfd"] .destaque{background:#2563EB !important;color:#fff !important;font-weight:800;padding:7px 16px;border-radius:20px;font-size:13px;letter-spacing:.3px;display:inline-block}
+			</style>
+			<style id="plan-bg-fix">
+				[data-id="5c864cfd"]{background-color:#fff !important;background-image:none !important;border-style:solid !important;border-width:2px !important;border-color:#2563EB !important;border-radius:18px !important;padding:20px 18px;box-shadow:0 16px 36px rgba(37,99,235,.22),0 6px 14px rgba(22,34,63,.12) !important;transform:translateY(-2px)}
+				[data-id="efbb840"]{background-color:#fff !important;background-image:none !important}
+			</style>
+			<style id="kit-benefits">
+				.kit-info{max-width:800px;margin:24px auto 24px;padding:16px 20px;border:1px solid #E5E9F2;border-radius:18px;background:#ffffff;text-align:left;color:#16223F;box-shadow:0 2px 10px rgba(22,34,63,.06)}
+				.kit-info h2{color:#16223F;font-size:24px;font-weight:700;margin:0 0 12px;text-align:center}
+				.kit-info p{font-size:16px;line-height:1.6;margin:0 0 20px;text-align:center}
+				.kit-info .kit-subtitle{color:#16223F;font-size:20px;font-weight:700;margin:0 0 12px;text-align:center}
+				.kit-info ul{list-style:none;padding:0;margin:0 auto;max-width:640px}
+				.kit-info li{font-size:16px;line-height:1.5;margin-bottom:8px;display:flex;gap:8px;align-items:flex-start}
+				.kit-check-icon{flex:0 0 auto;width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center}
+				.kit-check-icon svg{display:none}
+				.kit-check-icon::before{content:"";width:100%;height:100%;background-repeat:no-repeat;background-position:center;background-size:contain;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%2300f445' d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'/></svg>")}
+			</style>
+			<link rel="icon" href="images/favicon1.svg" sizes="32x32">
+<link rel="icon" href="images/favicon1.svg" sizes="192x192">
+<link rel="apple-touch-icon" href="images/favicon1.svg">
+<!-- removed external msapplication tile image -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<!-- TRACK COMBO -->
+<script>
+  (function() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://track.clubedapedagogia.com/tag/TC-WOX3OO4U.js";
+    var firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
+  })();
+</script>
+<!-- End TRACK COMBO -->
+</head>
+<body class="home wp-singular page-template page-template-elementor_canvas page page-id-5382 wp-embed-responsive wp-theme-hello-elementor cookies-not-set hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-5382">
+			<div data-elementor-type="wp-page" data-elementor-id="5382" class="elementor elementor-5382" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-432ac22e e-con-full e-flex e-con e-parent" data-id="432ac22e" data-element_type="container" data-e-type="container" data-settings="{" background_background":"gradient","shape_divider_bottom":"wave-brush"}"="">
+				<div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
+	<path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
+	<path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
+	<path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
+	<path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
+	<path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
+	<path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
+	<path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
+	<path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
+</svg>		</div>
+				<div class="elementor-element elementor-element-34e9b168 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="34e9b168" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">KIT COM 3.000+ ATIVIDADES PEDAGÓGICAS</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-132e37b0 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="132e37b0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Do berçário ao 5º ano alinhada à BNCC.</h3><br>				</div>
+				</div>
+				<div class="elementor-element elementor-element-04fef1c elementor-widget elementor-widget-image" data-id="04fef1c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="800" height="800" src="images/logo2.png" class="attachment-large size-large wp-image-5473" alt="" srcset="images/logo2.png 1000w, images/logo2.png 300w, images/logo2.png 150w, images/logo2.png 768w" sizes="(max-width: 800px) 100vw, 800px">															</div>
+				</div>
+				<style id="cro-extras">
+.social-proof-hero{background:#fff;color:#16223F;font-family:"Fira Sans",Sans-serif;font-size:0.95em;font-weight:700;padding:8px 22px;border-radius:30px;text-align:center;margin:0 auto 10px;display:inline-block;letter-spacing:0.01em;box-shadow:0 2px 8px rgba(22,34,63,.1)}
+.countdown-wrap{text-align:center;margin:8px 0 4px}
+.countdown-label{color:#16223F;font-family:"Fira Sans",Sans-serif;font-size:0.78em;font-weight:600;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.08em}
+.countdown-timer{display:inline-flex;align-items:center;gap:6px;background:#16223F;padding:8px 18px;border-radius:10px;border:1px solid #16223F}
+.cd-block{display:inline-flex;flex-direction:column;align-items:center;min-width:40px}
+.cd-block>span{font-family:"Fira Sans",Sans-serif;font-size:1.8em;font-weight:900;color:#fff;line-height:1}
+.cd-block small{font-size:0.6em;color:rgba(255,255,255,0.75);text-transform:uppercase;letter-spacing:0.08em;margin-top:2px}
+.cd-sep{font-size:1.6em;font-weight:900;color:#fff;margin-bottom:10px}
+</style>
+<div class="social-proof-hero">🔥 Mais de 12.400 professoras já adquiriram</div>
+<div class="elementor-element elementor-element-17729ac9 elementor-widget-divider--view-line_text elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="17729ac9" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container" style="margin-top:12px;margin-bottom:12px;">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				<span class="destaque">Promoção válida por tempo Limitado!</span>				</span>
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-18dfe378 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="18dfe378" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="countdown-wrap"><div class="countdown-label">⏰ Promoção expira em:</div><div class="countdown-timer"><span class="cd-block"><span id="cd-min">15</span><small>min</small></span><span class="cd-sep">:</span><span class="cd-block"><span id="cd-sec">00</span><small>seg</small></span></div></div>
+<div class="hero-price"><div class="de">DE R$ <span class="strike">54,95</span></div><div class="por">POR APENAS R$ 20,00</div><div class="obs">Pagamento no pix 5% de desconto<br><br></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5efa347 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="5efa347" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-lg elementor-animation-grow" href="#Planos">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO ADQUIRIR AGORA</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-59d23eb0 elementor-icon-list--layout-inline elementor-list-item-link-inline elementor-align-start elementor-mobile-align-center elementor-widget-mobile__width-inherit elementor-widget elementor-widget-icon-list" data-id="59d23eb0" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 128.5 128.5"><defs><style>      .cls-1 {        fill: #00f445;        stroke-width: 0px;      }    </style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"><span class="grossa">Compra</span><br> segura</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 128.5 128.5"><defs><style>      .cls-1 {        fill: #00f445;        stroke-width: 0px;      }    </style></defs><path class="cls-1" d="M76.5,50.8h-6.7c-1.1,0-2.1-.7-2.4-1.8l-2.1-6.4c-.2-.7-1.3-.7-1.5,0l-2.1,6.4c-.3,1.1-1.3,1.8-2.4,1.8h-6.7c-.8,0-1.1,1-.5,1.4l5.4,3.9c.9.7,1.2,1.8.9,2.9l-2.1,6.4c-.2.7.6,1.3,1.2.9l5.4-3.9c.9-.7,2.1-.7,3,0l5.4,3.9c.6.4,1.4-.2,1.2-.9l-2.1-6.4c-.4-1.1,0-2.2.9-2.9l5.4-3.9h.3c.6-.4.3-1.4-.5-1.4Z"></path><path class="cls-1" d="M64.3,30.3c-13.2,0-23.9,10.7-23.9,23.9s10.7,23.9,23.9,23.9,23.9-10.7,23.9-23.9-10.7-23.9-23.9-23.9ZM64.3,75.1c-11.6,0-20.9-9.3-20.9-20.9s9.4-20.9,20.9-20.9,20.9,9.3,20.9,20.9-9.3,20.9-20.9,20.9Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM42.8,110.4l-.4-13.6-13.6-.4,13.4-13.4c.7,1.6,1.5,3.3,3.1,4.2.8.5,1.7.7,3,.7s2.5-.2,3.7-.5c1-.2,2-.4,2.8-.4h.7c.7.2,1.7,1.1,2.7,2v.2c1,.9,2.1,1.9,3.3,2.5l-18.7,18.7ZM86.2,96.5l-.4,13.6-18.7-18.7c1.2-.6,2.3-1.6,3.3-2.5.9-.9,1.9-1.8,2.7-2,.2,0-.1,0,.7,0s1.8.2,2.8.4c1.2.2,2.6.5,3.7.5s2.1-.2,3-.7v-.2c1.7-.9,2.5-2.5,3.1-4.2l13.4,13.4-13.6.4ZM95,62.5c-.8,2.9,1.8,7.2.3,9.7-1.5,2.6-6.5,2.5-8.6,4.6s-2,7.1-4.6,8.6c-2.5,1.5-6.8-1.1-9.7-.3-2.8.7-5.2,5.1-8.2,5.1s-5.4-4.4-8.2-5.1c-2.9-.8-7.2,1.8-9.7.3-2.6-1.5-2.5-6.5-4.6-8.6s-7.1-2-8.6-4.6c-1.5-2.5,1.1-6.8.3-9.7-.7-2.8-5.1-5.2-5.1-8.2s4.4-5.4,5.1-8.2c.8-2.9-1.8-7.2-.3-9.7,1.5-2.6,6.5-2.5,8.6-4.6,2.1-2.1,2-7.1,4.6-8.6,2.5-1.5,6.8,1.1,9.7.3,2.8-.7,5.2-5.1,8.2-5.1s5.4,4.4,8.2,5.1c2.9.8,7.2-1.8,9.7-.3,2.6,1.5,2.5,6.5,4.6,8.6,2.1,2.1,7.1,2,8.6,4.6,1.5,2.5-1.1,6.8-.3,9.7.7,2.8,5.1,5.2,5.1,8.2s-4.4,5.4-5.1,8.2Z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"><span class="grossa">Satisfação</span><br> garantida</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 128.5 128.5"><defs><style>      .cls-1 {        fill: #00f445;        stroke-width: 0px;      }    </style></defs><path class="cls-1" d="M71,74.3c0-4-3-7.3-6.7-7.3s-6.7,3.3-6.7,7.3,1.2,4.9,3.1,6.2l-2.5,6.2c-.3.7.2,1.6,1,1.6h10.1c.8,0,1.3-.8,1-1.6h.1l-2.5-6.2c1.8-1.3,3.1-2.2,3.1-6.2Z"></path><path class="cls-1" d="M71.4,35.8h-15.6c-6.1,0-11.1,5-11.1,11.1v6.7h37.8v-6.7c0-6.1-5-11.1-11.1-11.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM99.4,96c0,3.3-2.7,5.9-5.9,5.9h-58.8c-3.3,0-5.9-2.7-5.9-5.9v-36.5c0-3.3,2.7-5.9,5.9-5.9h.8v-6.7c0-11.2,9.1-20.2,20.2-20.2h15.6c11.2,0,20.2,9.1,20.2,20.2v6.7h2c3.3,0,5.9,2.7,5.9,5.9v36.5Z"></path></svg>						</span>
+										<span class="elementor-icon-list-text"><span class="grossa">Privacidade</span><br> protegida</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4c35d9ff e-flex e-con-boxed e-con e-parent" data-id="4c35d9ff" data-element_type="container" data-e-type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-kitinfo elementor-widget elementor-widget-text-editor" data-id="kitinfo" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="kit-info">
+						<h2>Qual a importância do nosso kit?</h2>
+						<p>Este Kit de Atividades Pedagógicas foi desenvolvido para acompanhar a criança do berçário ao 5º ano, trabalhando de forma organizada e progressiva as principais áreas do aprendizado escolar.</p>
+						<div class="kit-subtitle">Todas as atividades do nosso kit foram criadas com o intuito de:</div>
+						<ul>
+							<li><span class="kit-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.5 128.5"><defs><style>.cls-1{fill:#16A34A;stroke-width:0px;}</style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg></span><span>Fortalecer a base da alfabetização.</span></li>
+							<li><span class="kit-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.5 128.5"><defs><style>.cls-1{fill:#16A34A;stroke-width:0px;}</style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg></span><span>Desenvolver a leitura, a escrita e a interpretação.</span></li>
+							<li><span class="kit-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.5 128.5"><defs><style>.cls-1{fill:#16A34A;stroke-width:0px;}</style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg></span><span>Estimular o raciocínio lógico e matemático.</span></li>
+							<li><span class="kit-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.5 128.5"><defs><style>.cls-1{fill:#16A34A;stroke-width:0px;}</style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg></span><span>Organizar o aprendizado por etapas.</span></li>
+							<li><span class="kit-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.5 128.5"><defs><style>.cls-1{fill:#16A34A;stroke-width:0px;}</style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg></span><span>Apoiar o trabalho do professor com materiais práticos e eficientes.</span></li>
+							<li><span class="kit-check-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.5 128.5"><defs><style>.cls-1{fill:#16A34A;stroke-width:0px;}</style></defs><polygon class="cls-1" points="59.6 69.1 52.6 62.1 48.4 66.3 59.6 77.5 80 57.1 75.8 52.9 59.6 69.1"></polygon><path class="cls-1" d="M64.3,35.6c-15.8,0-28.7,12.9-28.7,28.7s12.8,28.7,28.7,28.7,28.7-12.9,28.7-28.7-12.9-28.7-28.7-28.7ZM64.3,89.4c-13.9,0-25.1-11.2-25.1-25.1s11.3-25.1,25.1-25.1,25.1,11.2,25.1,25.1-11.2,25.1-25.1,25.1Z"></path><path class="cls-1" d="M64.3,0C28.8,0,0,28.8,0,64.3s28.8,64.3,64.3,64.3,64.3-28.8,64.3-64.3S99.8,0,64.3,0ZM104,87.2c-1.9,3.3-8.3,3.1-11,5.8-2.6,2.7-2.5,9.1-5.8,11-3.2,1.9-8.7-1.4-12.4-.4-3.5,1-6.7,6.6-10.5,6.6s-6.9-5.6-10.5-6.6c-3.7-1-9.2,2.3-12.4.4-3.3-1.9-3.1-8.3-5.8-11-2.7-2.6-9.1-2.5-11-5.8-1.9-3.2,1.4-8.7.4-12.4-1-3.5-6.6-6.7-6.6-10.5s5.6-6.9,6.6-10.5c1-3.7-2.3-9.2-.4-12.4,1.9-3.3,8.3-3.1,11-5.8,2.6-2.7,2.5-9.1,5.8-11,3.2-1.9,8.7,1.4,12.4.4,3.5-1,6.7-6.6,10.5-6.6s6.9,5.6,10.5,6.6c3.7,1,9.2-2.3,12.4-.4,3.3,1.9,3.1,8.3,5.8,11,2.7,2.6,9.1,2.5,11,5.8,1.9,3.2-1.4,8.7-.4,12.4,1,3.5,6.6,6.7,6.6,10.5s-5.6,6.9-6.6,10.5c-1,3.7,2.3,9.2.4,12.4Z"></path></svg></span><span>Promover uma aula leve, eficaz e alinhada às necessidades da sala de aula.</span></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-37b7b37d elementor-widget__width-inherit scroll-bottom elementor-widget elementor-widget-heading" data-id="37b7b37d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Arraste para os lados para ver oque mães e professoras dizem:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fdf3c9a elementor-widget elementor-widget-image" data-id="fdf3c9a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="clientes-slider-wrap">
+						<div class="clientes-slider">
+							<img decoding="async" loading="lazy" src="images/DwXbao9009471.avif" alt="Depoimento de cliente 1">
+							<img decoding="async" loading="lazy" src="images/JgqNrd8905423.avif" alt="Depoimento de cliente 2">
+							<img decoding="async" loading="lazy" src="images/PvMuff9024042.avif" alt="Depoimento de cliente 3">
+							<img decoding="async" loading="lazy" src="images/bCLPLX8996678.avif" alt="Depoimento de cliente 4">
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="cta-slim-wrap">
+					<a href="#Planos" class="cta-slim">Quero adquirir agora</a>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-3915800c e-flex e-con-boxed e-con e-parent" data-id="3915800c" data-element_type="container" data-e-type="container" data-settings="{" background_background":"gradient","shape_divider_top":"wave-brush","shape_divider_bottom":"wave-brush"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-shape elementor-shape-top" aria-hidden="true" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
+	<path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
+	<path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
+	<path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
+	<path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
+	<path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
+	<path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
+	<path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
+	<path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
+</svg>		</div>
+				<div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
+	<path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
+	<path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
+	<path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
+	<path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
+	<path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
+	<path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
+	<path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
+	<path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
+</svg>		</div>
+		<div class="elementor-element elementor-element-671a1d6c e-con-full scroll-bottom e-flex e-con e-child" data-id="671a1d6c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1974a1e7 elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="1974a1e7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">As atividades são para você que...</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-708292da elementor-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="708292da" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Quer materiais pedagógicos prontos e de qualidade para casa ou escola;</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Precisa facilitar a rotina com aulas planejadas e progressivas;</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Deseja desenvolver leitura, escrita e matemática com atividades lúdicas;</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Prefere conteúdo imprimível, alinhado à BNCC.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-42c4648 e-con-full scroll-bottom e-flex e-con e-child" data-id="42c4648" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-72238ee3 elementor-widget__width-inherit elementor-widget elementor-widget-heading" data-id="72238ee3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Mas, não são para quem...</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2a8d1152 elementor-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2a8d1152" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Não pretende dedicar ao menos 10 minutos por dia;</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Busca apenas materiais digitais sem necessidade de impressão;</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Não deseja seguir uma sequência pedagógica organizada.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<style id="exemplos-atividades-style">
+			.exemplosbox-cream{background:#FFF8EA !important;background-color:#FFF8EA !important;background-image:none !important;padding:50px 20px}
+			.exemplos-pill-wrap{display:flex;justify-content:center;margin:4px 0 14px}
+			.exemplos-pill{display:inline-block;background:#EAF2FF;color:#2563EB;border:2px solid #2563EB;border-radius:999px;padding:8px 22px;font-weight:800;font-size:13px;letter-spacing:.5px;text-transform:uppercase}
+			.exemplos-title{text-align:center;color:#16223F;font-size:26px;font-weight:800;margin:0 0 10px}
+			.exemplos-divider{width:70px;height:4px;background:#FBBF24;border-radius:2px;margin:0 auto 24px}
+			.exemplos-carousel-wrap{position:relative;max-width:380px;margin:0 auto}
+			.exemplos-carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;border-radius:22px;box-shadow:0 6px 20px rgba(22,34,63,.15);scrollbar-width:none}
+			.exemplos-carousel::-webkit-scrollbar{display:none}
+			.exemplos-slide{flex:0 0 100%;scroll-snap-align:center}
+			.exemplos-slide img{width:100%;height:auto;display:block;border-radius:22px}
+			.exemplos-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:#2563EB;color:#fff;border:none;font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;box-shadow:0 2px 6px rgba(22,34,63,.3)}
+			.exemplos-arrow--prev{left:-14px}
+			.exemplos-arrow--next{right:-14px}
+			.exemplos-arrow:hover{filter:brightness(1.08)}
+			.exemplos-dots{display:flex;justify-content:center;gap:6px;margin-top:16px;flex-wrap:wrap;max-width:380px;margin-left:auto;margin-right:auto}
+			.exemplos-dot{width:8px;height:8px;border-radius:50%;background:#D6DEEC;border:none;padding:0;cursor:pointer;transition:width .2s,border-radius .2s}
+			.exemplos-dot.is-active{background:#2563EB;width:20px;border-radius:4px}
+			@media(min-width:768px){.exemplos-carousel-wrap{max-width:420px}.exemplos-dots{max-width:420px}.exemplos-arrow--prev{left:-18px}.exemplos-arrow--next{right:-18px}}
+	</style>
+	<div class="elementor-element elementor-element-exemplosbox e-flex e-con-boxed e-con e-parent exemplosbox-cream" data-id="exemplosbox" data-element_type="container" data-e-type="container">
+				<div class="e-con-inner">
+			<div class="elementor-element elementor-element-exemplosinner e-con-full scroll-bottom e-flex e-con e-child" data-id="exemplosinner" data-element_type="container" data-e-type="container">
+				<div class="elementor-widget-container">
+					<div class="exemplos-pill-wrap"><span class="exemplos-pill">Veja por dentro</span></div>
+					<h2 class="elementor-heading-title elementor-size-default exemplos-title">Exemplos de atividades</h2>
+					<div class="exemplos-divider"></div>
+					<div class="exemplos-carousel-wrap">
+						<button type="button" class="exemplos-arrow exemplos-arrow--prev" aria-label="Atividade anterior"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+						<div class="exemplos-carousel" id="exemplosCarousel">
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/1.png" alt="Exemplo de atividade 1"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/2.png" alt="Exemplo de atividade 2"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/3.png" alt="Exemplo de atividade 3"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/4.png" alt="Exemplo de atividade 4"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/5.png" alt="Exemplo de atividade 5"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/6.png" alt="Exemplo de atividade 6"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/7.png" alt="Exemplo de atividade 7"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/8.png" alt="Exemplo de atividade 8"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/9.jpg" alt="Exemplo de atividade 9"></div>
+							<div class="exemplos-slide"><img loading="lazy" decoding="async" src="images/11.png" alt="Exemplo de atividade 11"></div>
+						</div>
+						<button type="button" class="exemplos-arrow exemplos-arrow--next" aria-label="Próxima atividade"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+					</div>
+					<div class="exemplos-dots" id="exemplosDots"><button type="button" class="exemplos-dot is-active" aria-label="Ir para exemplo 1"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 2"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 3"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 4"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 5"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 6"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 7"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 8"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 9"></button><button type="button" class="exemplos-dot" aria-label="Ir para exemplo 10"></button></div>
+					<div class="elementor-element elementor-element-5efa347 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="exemplosCta" data-element_type="widget" data-e-type="widget" data-widget_type="button.default" style="margin-top:28px">
+					<div class="elementor-widget-container">
+										<div class="elementor-button-wrapper">
+						<a class="elementor-button elementor-button-link elementor-size-lg elementor-animation-grow" href="#kitPremium">
+							<span class="elementor-button-content-wrapper">
+										<span class="elementor-button-text">QUERO ADQUIRIR AGORA</span>
+						</span>
+						</a>
+					</div>
+									</div>
+					</div>
+				</div>
+			</div>
+				</div>
+			</div>
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		var track = document.getElementById('exemplosCarousel');
+		if (!track) return;
+		var wrap = track.closest('.exemplos-carousel-wrap');
+		var slides = track.querySelectorAll('.exemplos-slide');
+		var dotsWrap = document.getElementById('exemplosDots');
+		var prevBtn = wrap.querySelector('.exemplos-arrow--prev');
+		var nextBtn = wrap.querySelector('.exemplos-arrow--next');
+		var dots = [];
+
+		slides.forEach(function (_, i) {
+			var dot = document.createElement('button');
+			dot.type = 'button';
+			dot.className = 'exemplos-dot' + (i === 0 ? ' is-active' : '');
+			dot.setAttribute('aria-label', 'Ir para exemplo ' + (i + 1));
+			dot.addEventListener('click', function () { goToSlide(i); });
+			dotsWrap.appendChild(dot);
+			dots.push(dot);
+		});
+
+		function goToSlide(i) {
+			track.scrollTo({ left: track.clientWidth * i, behavior: 'smooth' });
+		}
+
+		function currentIndex() {
+			return Math.round(track.scrollLeft / track.clientWidth);
+		}
+
+		function updateActiveDot() {
+			var i = currentIndex();
+			dots.forEach(function (d, idx) { d.classList.toggle('is-active', idx === i); });
+		}
+
+		prevBtn.addEventListener('click', function () {
+			goToSlide((currentIndex() - 1 + slides.length) % slides.length);
+		});
+		nextBtn.addEventListener('click', function () {
+			goToSlide((currentIndex() + 1) % slides.length);
+		});
+
+		var scrollTimer;
+		track.addEventListener('scroll', function () {
+			clearTimeout(scrollTimer);
+			scrollTimer = setTimeout(updateActiveDot, 80);
+		});
+	});
+	</script>
+	<div class="elementor-element elementor-element-50d24688 e-flex e-con-boxed e-con e-parent" data-id="50d24688" data-element_type="container" data-e-type="container" data-settings="{" background_background":"gradient"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4e4e0fe0 elementor-widget__width-initial elementor-widget-tablet__width-inherit scroll-bottom elementor-widget elementor-widget-heading" data-id="4e4e0fe0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="exemplos-pill-wrap"><span class="exemplos-pill">🎁 Bônus exclusivos</span></div>
+					<h2 class="elementor-heading-title elementor-size-default" style="color:#16223F">Comprando hoje, você leva +8 apostilas bônus de presente:</h2>				</div>
+				</div>
+				<div class="kit-cards" id="cards-produto">
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/matematica.jpg" alt="Matemática">
+						<h3>Apostila de Matemática</h3>
+						<p>Material completo para ensinar desde cálculos simples ao avançado.</p>
+						<span class="kit-price-old">De R$ 47,00</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/leitura.png" alt="Leitura e interpretação">
+						<h3>Apostila de Leitura e interpretação</h3>
+						<p>Desenvolve compreensão de textos e interpretação de forma organizada.</p>
+						<span class="kit-price-old">De R$ 39,90</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/caligrafia.jpg" alt="Caligrafia">
+						<h3>Apostila de Caligrafia</h3>
+						<p>Atividades práticas para aprimorar a escrita de forma leve e progressiva.</p>
+						<span class="kit-price-old">De R$ 29,90</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/silabas.jpg" alt="Sílabas">
+						<h3>Apostila de Sílabas</h3>
+						<p>Reconhecimento, leitura e escrita das sílabas com atividades progressivas.</p>
+						<span class="kit-price-old">De R$ 34,90</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/classes-gramaticas.png" alt="Classes gramaticais">
+						<h3>Apostila de Classes gramaticais</h3>
+						<p>Aplicação prática de substantivos, verbos, adjetivos e mais.</p>
+						<span class="kit-price-old">De R$ 37,00</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/producaodetexto.png" alt="Produção de textos">
+						<h3>Apostila de Produção de textos</h3>
+						<p>Ajuda a organizar ideias e desenvolver escrita com clareza e criatividade.</p>
+						<span class="kit-price-old">De R$ 39,90</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/ortografia.png" alt="Ortografia">
+						<h3>Apostila de Ortografia</h3>
+						<p>Refina a escrita correta reforçando as principais regras.</p>
+						<span class="kit-price-old">De R$ 32,90</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+					<article class="kit-card">
+						<span class="kit-card-badge">🎁 Bônus</span>
+						<img loading="lazy" decoding="async" src="images/alfabetizacao.png" alt="Alfabetização">
+						<h3>Apostila de Alfabetização</h3>
+						<p>Auxilia no reconhecimento de letras e início da leitura e escrita.</p>
+						<span class="kit-price-old">De R$ 44,90</span>
+						<span class="kit-price-free">GRÁTIS</span>
+					</article>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-132559b0 e-flex e-con-boxed e-con e-parent" data-id="132559b0" data-element_type="container" data-e-type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3856c18 e-con-full e-flex e-con e-child" data-id="3856c18" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3aed7575 elementor-widget__width-inherit scroll-left elementor-widget elementor-widget-heading" data-id="3aed7575" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Planos de acordo com sua necessidade</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4ef2edfc elementor-widget__width-inherit scroll-left elementor-widget elementor-widget-heading" data-id="4ef2edfc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+							</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-68689d6 elementor-widget elementor-widget-menu-anchor" data-id="68689d6" data-element_type="widget" data-e-type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-anchor" id="Planos"></div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-5c864cfd e-con-full scroll-bottom e-flex e-con e-child" data-id="5c864cfd" data-element_type="container" data-e-type="container" data-settings="{" background_background":"gradient"}"="">
+				<div class="elementor-element elementor-element-7ff01d0d elementor-widget-divider--view-line_text elementor-widget__width-inherit elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="7ff01d0d" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				<span class="destaque">KIT BÁSICO</span>				</span>
+						</span>
+		</div>
+						</div>
+				</div>
+				<h3 class="plan-title">Kit de Atividades Básico + 6 Bônus Exclusivos</h3>
+				<p class="plan-subtitle">Da educação infantil ao 5º ano alinhado a BNCC. Atividades prontas para imprimir e aplicar.</p>
+				<div class="plan-price-block">
+					<span class="discount-badge">-62% OFF</span>
+					<div class="price-old">De R$ 54,95</div>
+					<div class="price-new">R$ 20,00</div>
+					<div class="save">Você economiza R$ 34,95</div>
+				</div>
+				<div class="elementor-element elementor-element-240c31bb elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="240c31bb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">R$ 4,99</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d9a1a1c elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="d9a1a1c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<ul class="plan-list">
+						<li><span class="kit-emoji-icon">📚</span><span>Kit com 2.000+ Atividades</span></li>
+						<li><span class="kit-emoji-icon">🛡️</span><span>Garantia de 7 dias.</span></li>
+						<li><span class="kit-emoji-icon">♾️</span><span>Acesso vitalício.</span></li>
+					</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-bbe406a elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="bbe406a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-lg elementor-animation-grow" href="https://ggcheckout.app/checkout/v5/4wfBFx1mdr5fHWwl0Xuy">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO O KIT BASICO</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-60bfb58 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="60bfb58" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-981b489 e-flex e-con-boxed e-con e-parent" data-id="981b489" data-element_type="container" data-e-type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-d195f85 e-con-full e-flex e-con e-child" data-id="d195f85" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-82e2e87 elementor-widget__width-inherit scroll-left elementor-widget elementor-widget-heading" data-id="82e2e87" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+				</div>
+				</div>
+				</div>
+		<div id="kitPremium" class="elementor-element elementor-element-efbb840 e-con-full scroll-bottom e-flex e-con e-child" data-id="efbb840" data-element_type="container" data-e-type="container" data-settings="{" background_background":"gradient"}"="">
+				<span class="mais-vendido-badge">Mais vendido</span>
+				<div class="elementor-element elementor-element-d05c857 elementor-widget-divider--view-line_text elementor-widget__width-inherit elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider" data-id="d05c857" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				<span class="destaque">KIT PREMIUM</span>				</span>
+						</span>
+		</div>
+						</div>
+				</div>
+				<h3 class="plan-title">Kit +4.000 Atividades Pedagógicas + 8 Bônus Exclusivos</h3>
+				<p class="plan-subtitle">A versão mais completa com mais atividades, materiais extras e bônus do kit básico também incluso, para quem quer ir além.</p>
+				<div class="plan-price-block">
+					<span class="discount-badge">-50% OFF</span>
+<div class="price-old">De R$ 80,00</div>
+<div class="price-new">R$ 39,90</div>
+<div class="save">Você economiza R$ 40,10</div>
+				</div>
+				<div class="elementor-widget-container">
+					<ul class="plan-list">
+						<li><span class="kit-emoji-icon">📚</span><span>Kit com 4.000+ Atividades.</span></li>
+						<li><span class="kit-emoji-icon">🥇</span><span>Material Matematica Dourado.</span></li>
+						<li><span class="kit-emoji-icon">🔍</span><span>Sondagem Diagnóstica mais profunda.</span></li>
+						<li><span class="kit-emoji-icon">📘</span><span>Livro de Leitura.</span></li>
+						<li><span class="kit-emoji-icon">✏️</span><span>Reforço Escolar mais aprofundado.</span></li>
+						<li><span class="kit-emoji-icon">📝</span><span>Produção de texto mais elaborada.</span></li>
+						<li><span class="kit-emoji-icon">➕</span><span>Matemática com mais exercícios.</span></li>
+						<li><span class="kit-emoji-icon">🗂️</span><span>Material organizado em módulos.</span></li>
+						<li><span class="kit-emoji-icon">♾️</span><span>Acesso vitalício.</span></li>
+						<li><span class="kit-emoji-icon">🛡️</span><span>Garantia de 30 dias.</span></li>
+					</ul>
+				</div>
+				<div class="elementor-element elementor-element-3f91d9d elementor-align-center elementor-mobile-align-center elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="3f91d9d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-lg elementor-animation-grow" href="https://ggcheckout.app/checkout/v5/GzEOun1NhEEJrQCYrENl">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO O KIT PREMIUM</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-ea93eb5 elementor-widget elementor-widget-image" data-id="ea93eb5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" loading="lazy" width="366" height="29" class="attachment-full size-full wp-image-4656" alt="meios-de-pagamento-cinzas" src="images/meios-de-pagamento-cinzas.svg" style="--smush-placeholder-width: 366px; --smush-placeholder-aspect-ratio: 366/29;">															</div>
+				</div>
+				<div class="elementor-element elementor-element-78e5e35 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="78e5e35" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-bc3fa85 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="bc3fa85" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Compra 100% segura! Receba o material no WhatsApp e no e-mail.</p>								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-729c60d9 e-flex e-con-boxed e-con e-parent" data-id="729c60d9" data-element_type="container" data-e-type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-48090505 e-con-full e-flex e-con e-child" data-id="48090505" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-327891ca elementor-widget__width-initial elementor-widget-tablet__width-inherit scroll-bottom elementor-widget elementor-widget-image-box" data-id="327891ca" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Ficou com alguma dúvida</h3><p class="elementor-image-box-description">Confira as respostas para as perguntas.</p></div></div>				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2341a80b elementor-widget__width-initial elementor-widget-tablet__width-inherit scroll-bottom elementor-widget" data-id="2341a80b" data-element_type="widget">
+				<div class="elementor-widget-container">
+					<style>
+					.faq{max-width:900px;margin:0 auto}
+					.faq-item{border:1px solid #d5d8dc;border-radius:10px;margin:10px 0;background:#fff;overflow:hidden}
+					.faq-item summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+					.faq-item summary::-webkit-details-marker{display:none}
+					.faq-item summary::after{content:'+';color:#2563EB;font-size:22px;font-weight:900}
+					.faq-item[open] summary::after{content:'−'}
+					.faq-answer{padding:12px 16px}
+					</style>
+					<section class="faq" id="duvidas">
+						<details class="faq-item" open="">
+							<summary><span>O material vai chegar na minha casa?</span></summary>
+							<div class="faq-answer"><p>Não. O produto é 100% digital (PDF). Após a confirmação do pagamento, o acesso chega imediatamente no WhatsApp e no e‑mail cadastrados. Você pode baixar e imprimir quantas vezes precisar, com acesso vitalício.</p></div>
+						</details>
+						<details class="faq-item">
+							<summary><span>Para quantos anos é indicado?</span></summary>
+							<div class="faq-answer"><p>Indicado para crianças de 2 a 12 anos (berçário ao 5º ano), alinhado à BNCC.</p></div>
+						</details>
+						<details class="faq-item">
+							<summary><span>Eu terei suporte?</span></summary>
+							<div class="faq-answer"><p>Sim. Oferecemos suporte via WhatsApp para dúvidas sobre acesso, download e uso do material.</p></div>
+						</details>
+						<details class="faq-item">
+							<summary><span>Posso utilizar em escola?</span></summary>
+							<div class="faq-answer"><p>Sim. É permitido o uso em salas de aula, ministério infantil e catequese. Não é permitida a revenda ou redistribuição dos arquivos.</p></div>
+						</details>
+					</section>
+					<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O material vai chegar na minha casa?","acceptedAnswer":{"@type":"Answer","text":"Não. O produto é 100% digital (PDF). Após a confirmação do pagamento, o acesso chega imediatamente no WhatsApp e no e‑mail cadastrados. Você pode baixar e imprimir quantas vezes precisar, com acesso vitalício."}},{"@type":"Question","name":"Para quantos anos é indicado?","acceptedAnswer":{"@type":"Answer","text":"Indicado para crianças de 2 a 12 anos (berçário ao 5º ano), alinhado à BNCC."}},{"@type":"Question","name":"Eu terei suporte?","acceptedAnswer":{"@type":"Answer","text":"Sim. Oferecemos suporte via WhatsApp para dúvidas sobre acesso, download e uso do material."}},{"@type":"Question","name":"Posso utilizar em escola?","acceptedAnswer":{"@type":"Answer","text":"Sim. É permitido o uso em salas de aula, ministério infantil e catequese. Não é permitida a revenda ou redistribuição dos arquivos."}}]}</script>
+				</div>
+				</div>
+					</div>
+				</div>
+				<style id="guarantee-section">
+					.guarantee{max-width:900px;margin:24px auto 24px;padding:16px 20px;border:1px solid #E5E9F2;border-radius:18px;background:#ffffff;text-align:center;color:#16223F;box-shadow:0 2px 10px rgba(22,34,63,.06)}
+					.guarantee-inner{display:flex;flex-direction:column;align-items:center;gap:10px}
+					.guarantee-title{font-family:"Fira Sans", Sans-serif;font-size:24px;font-weight:800;color:#16A34A;margin:6px 0}
+					.guarantee p{font-family:"Fira Sans", Sans-serif;font-size:16px;line-height:1.6;margin:0}
+					.guarantee strong{font-weight:800}
+					@media(min-width:768px){.guarantee{padding:20px 28px}}
+					.guarantee img{width:120px;height:auto}
+				</style>
+				<section class="guarantee" id="garantia">
+					<div class="guarantee-inner">
+						<img src="images/garantia7.png" alt="Garantia 7 dias">
+						<h3 class="guarantee-title">Garantia Incondicional de 7 Dias</h3>
+						<p>Você tem <strong>7 dias</strong> para testar o kit completo. Se por qualquer motivo você não ficar satisfeita, devolvemos <strong>100% do seu investimento</strong>, sem perguntas.</p>
+						<p>O risco é todo nosso: experimente nas suas aulas e, se não valer a pena, é só avisar.</p>
+					</div>
+				</section>
+		<style id="upsell-modal-style">
+			.upsell-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;z-index:99997}
+			.upsell-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:99998;padding:20px}
+			.upsell-card{position:relative;background:#fff;border-radius:14px;border:2px solid #F97316;max-width:520px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.35);padding:18px 18px 16px;color:#16223F}
+			.upsell-close{position:absolute;right:10px;top:10px;background:transparent;color:#000;border:0;border-radius:0;padding:0;font-size:26px;line-height:1;cursor:pointer}
+			.upsell-title{margin:8px 0 8px;text-align:center;color:#16223F;font-weight:800;font-size:22px}
+			.upsell-sub{margin:0 0 10px;text-align:center;color:#333}
+			.upsell-badge{display:block;margin:0 auto 8px;background:#FFEDD5;border:1px solid #F97316;color:#F97316;font-weight:900;border-radius:8px;padding:4px 10px;width:max-content}
+			.upsell-price{margin:4px 0 8px;text-align:center}
+			.upsell-old{color:#DC2626;text-decoration:line-through}
+			.upsell-new{color:#16A34A;font-weight:900;font-size:28px}
+			.upsell-econ{color:#16A34A;font-weight:800}
+			.upsell-list ul{margin:12px 0;padding-left:20px}
+			.upsell-list li{margin:6px 0;list-style:disc}
+			.upsell-note{font-size:13px;color:#666;text-align:center;margin:10px 0 4px}
+			.upsell-cta{display:block;width:100%;background:#22C55E;color:#fff;font-weight:900;border:none;border-radius:10px;padding:14px 16px;margin:10px 0;text-align:center;text-decoration:none}
+			.upsell-secondary{display:block;text-align:center;color:#666;text-decoration:underline;font-size:14px;margin-top:4px}
+			@media(max-width:480px){.upsell-card{padding:16px}}
+		</style>
+		<div id="upsellOverlay" class="upsell-overlay" aria-hidden="true"></div>
+		<div id="upsellModal" class="upsell-modal" role="dialog" aria-modal="true" aria-labelledby="upsellTitle" aria-hidden="true">
+		  <div class="upsell-card">
+		    <button class="upsell-close" aria-label="Fechar" id="upsellClose">×</button>
+		    <h3 class="upsell-title" id="upsellTitle">Melhore para o Plano Premium</h3>
+		    <span class="upsell-badge">OFERTA ESPECIAL</span>
+		    <div class="upsell-price">
+		      <div class="upsell-old">De R$ 39,90</div>
+		      <div class="upsell-new">R$ 28,00</div>
+		      <div class="upsell-econ">Economia de R$ 11,00</div>
+		      <div class="upsell-list">
+		        <ul>
+		          <li><span class="check"></span><span>Kit com 4.000+ Atividades</span></li>
+		          <li><span class="check"></span><span>Simulado Escolar</span></li>
+		          <li><span class="check"></span><span>Livro de Leitura</span></li>
+		          <li><span class="check"></span><span>+10 Beneficios do Plano Premium</span></li>
+		          <li><span class="check"></span><span>Acesso vitalício</span></li>
+		          <li><span class="check"></span><span>Garantia de 30 dias</span></li>
+		        </ul>
+		      </div>
+		      <div class="upsell-note">Total: mais de 4.000 atividades disponíveis no Premium</div>
+		    </div>
+		    <a id="upsellAccept" class="upsell-cta" href="https://ggcheckout.app/checkout/v5/ciSy9y1p026pDyDD9HXo">SIM! QUERO POR R$ 28,00</a>
+		    <a id="upsellDecline" class="upsell-secondary" href="https://ggcheckout.app/checkout/v5/4wfBFx1mdr5fHWwl0Xuy">Não, continuar com o Básico</a>
+		  </div>
+		</div>
+		<script>
+		(function(){
+		  function openModal(){modal.style.display='flex';overlay.style.display='block';modal.setAttribute('aria-hidden','false');overlay.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
+		  function closeModal(){modal.style.display='none';overlay.style.display='none';modal.setAttribute('aria-hidden','true');overlay.setAttribute('aria-hidden','true');document.body.style.overflow=''}
+		  var modal=document.getElementById('upsellModal');
+		  var overlay=document.getElementById('upsellOverlay');
+		  var closeBtn=document.getElementById('upsellClose');
+		  if(closeBtn){closeBtn.addEventListener('click',closeModal)}
+		  overlay.addEventListener('click',closeModal);
+		  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal()}});
+		  var basicBtn=document.querySelector('[data-id="5c864cfd"] a.elementor-button');
+		  if(basicBtn){
+		    var basicHref=basicBtn.getAttribute('href');
+		    var promoHref='https://ggcheckout.app/checkout/v5/ciSy9y1p026pDyDD9HXo';
+		    var accept=document.getElementById('upsellAccept');
+		    var decline=document.getElementById('upsellDecline');
+		    accept.setAttribute('href', promoHref);
+		    decline.setAttribute('href', basicHref || '#');
+		    basicBtn.addEventListener('click', function(e){e.preventDefault(); openModal();});
+		  }
+		})();
+		</script>
+		<div class="elementor-element elementor-element-5d3258fb e-flex e-con-boxed e-con e-parent" data-id="5d3258fb" data-element_type="container" data-e-type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-16188bb elementor-icon-list--layout-inline elementor-mobile-align-center elementor-widget-widescreen__width-initial elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="16188bb" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">POLÍTICA DE PRIVACIDADE</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">TERMO DE USO</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2767c133 elementor-widget-widescreen__width-initial elementor-widget-tablet__width-auto elementor-widget elementor-widget-heading" data-id="2767c133" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">CLUBE DA PEDAGOGIA - Copyright © 2025-2026. Todos os direitos reservados.</h2>				</div>
+				</div>
+					</div>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+(function(){
+  try{
+    if(window.ElementorProFrontendConfig){
+      var c=window.ElementorProFrontendConfig;
+      c.ajaxurl="";
+      if(c.urls){c.urls.assets="";c.urls.rest="";}
+    }
+    if(window.elementorFrontendConfig){
+      var e=window.elementorFrontendConfig;
+      if(e.urls){e.urls.assets="";e.urls.ajaxurl="";e.urls.uploadUrl="";}
+    }
+  }catch(_){}
+})();
+</script>
+			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script type="ignore" id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index\\.php/)?wp\\-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://sementinhasdecristo.com.br","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="ignore" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script type="rocketlazyloadscript" data-minify="1" async="async" src="js/hello-frontend.js" id="hello-theme-frontend-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/core.min.js" id="jquery-ui-core-js"></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":true}},
+"hasCustomBreakpoints":true},"version":"3.35.5","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/sementinhasdecristo.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/sementinhasdecristo.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/sementinhasdecristo.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"5a1cd99fbf"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":5382,"title":"Sementinhas%20de%20Cristo%20%E2%80%93%20Atividades%20B%C3%ADblicas%20Infantis","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script type="rocketlazyloadscript" async="async" src="js/frontend.min.js" id="elementor-frontend-js"></script>
+<script id="smush-lazy-load-js-before">
+var smushLazyLoadOptions = {"autoResizingEnabled":false,"autoResizeOptions":{"precision":5,"skipAutoWidth":true}};
+//# sourceURL=smush-lazy-load-js-before
+</script>
+<script async="async" src="js/smush-lazy-load.min.js" id="smush-lazy-load-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/hooks.min.js" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/i18n.min.js" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/sementinhasdecristo.com.br\/wp-admin\/admin-ajax.php","nonce":"7039de4dc6","urls":{"assets":"https:\/\/sementinhasdecristo.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/sementinhasdecristo.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},
+"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/sementinhasdecristo.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script type="rocketlazyloadscript" async="async" src="js/frontend.min_1.js" id="elementor-pro-frontend-js"></script>
+<script type="rocketlazyloadscript" async="async" src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+
+		<!-- removed cookie notice from copied site -->
+
+
+<script>
+(function(){
+  var s=sessionStorage.getItem('cde');
+  if(!s){s=Date.now()+900000;sessionStorage.setItem('cde',s);}
+  s=parseInt(s,10);
+  function t(){
+    var r=Math.max(0,Math.floor((s-Date.now())/1000));
+    if(r===0){s=Date.now()+900000;sessionStorage.setItem('cde',s);r=900;}
+    document.getElementById('cd-min').textContent=String(Math.floor(r/60)).padStart(2,'0');
+    document.getElementById('cd-sec').textContent=String(r%60).padStart(2,'0');
+  }
+  t();setInterval(t,1000);
+})();
+</script>
+
+</div></body></html>
