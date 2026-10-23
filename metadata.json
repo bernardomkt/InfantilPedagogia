@@ -1,0 +1,8 @@
+{
+  "name": "Clube da Pedagogia",
+  "description": "Kit com mais de 3.000 atividades pedagógicas do berçário ao 5º ano alinhadas à BNCC.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
